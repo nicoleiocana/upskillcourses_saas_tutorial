@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
@@ -27,7 +27,7 @@
           <% end %>
         </div>
         <div class="collapse navbar-collapse" id="main-nav-collapse">
-            <div class="nav navbar-nav navbar-right">
+            <div class="nav navbar-nav navbar-right" id="log-buttons">
               <% if user_signed_in? %>
                 <%= link_to "Log Out", destroy_user_session_path, method: :delete,
                 data: { confirm: 'Are you sure?' }, class:'btn btn-default navbar-btn' %>
@@ -51,6 +51,6 @@
         <%= content_tag :div, msg, class: "alert alert-#{type}" %>
       <% end %>
     </div>
-      <%= yield %>
+    <%= yield %>
   </body>
 </html>

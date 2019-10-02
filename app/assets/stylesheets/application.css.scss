@@ -25,7 +25,7 @@ h1, h2, h3 {
 }
 
 // Background Gradient
-.navbar, .home-callout {
+.home-callout {
   /* Gradient provided by @_ighosh at uiGradients.com */
   background: #00c6ff;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
@@ -35,6 +35,7 @@ h1, h2, h3 {
 // Nav Styles
 .navbar {
   border: none;
+  margin-bottom: 10px;
 }
 
 .navbar-brand {
@@ -42,8 +43,8 @@ h1, h2, h3 {
   font-weight: 800;
 }
 
-.navbar-default .navbar-brand,
-.navbar-default .navbar-nav > li > a {
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a {
   color: white;
   &:hover {
     color: white;
@@ -51,37 +52,58 @@ h1, h2, h3 {
   }
 }
 
-.navbar-default .navbar-toggle .icon-bar {
+.navbar-inverse .navbar-toggle .icon-bar {
   background-color: white;
 }
 
-.navbar-default .navbar-toggle {
+.navbar-inverse .navbar-toggle {
   border: 2px solid white;
   &:hover, &:focus {
-    background-color: #00c6ff;
+    background-color: gray;
   }
+}
+
+#log-buttons {
+  margin-left: 0px;
 }
 
 // Home Page Styles
 .home-callout {
-  margin-top: -20px;
+  margin-top: -10px;
   padding-top: 50px;
   padding-bottom: 100px;
   color: white;
 }
 
-.flash-container {
-  position: absolute;
-  width: 100%;
-}
-
-.alert-notice, .alert-alert {
-  text-align: center;
-  background: rgba(255, 255, 255, 0.30);
-  border-color: rgba(255, 255, 255, .5);
-  margin-top: -14px;
-}
-
 .home-signup-links {
   margin-top: 30px;
+}
+
+// Devise Flash
+.alert-error {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: center;
+ }
+
+.alert-alert {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: center;
+ }
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: center;
+ }
+
+.alert-notice {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: center;
 }
