@@ -63,8 +63,36 @@ h1, h2, h3 {
   }
 }
 
+.dropdown-menu {
+  border: none;
+  background-color: #222;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #222;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+  color: white;
+  &:hover, &:focus {
+    color: #fff;
+    background-color: #222;
+  }
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+    background-color: #e5e5e540;
+}
+
 #log-buttons {
   margin-left: 0px;
+}
+
+#nav-cancel {
+  padding-left: 10px;
 }
 
 // Home Page Styles
