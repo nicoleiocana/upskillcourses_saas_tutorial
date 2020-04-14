@@ -1,3 +1,3 @@
 # README
 
-[Upskill](http://upskillcourses.com) Software-as-a-Service Ruby on Rails App
+[Upskill](https://upskillcourses.com/courses/essential-web-developer-course) Software-as-a-Service Ruby on Rails App
