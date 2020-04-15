@@ -13,3 +13,15 @@ Stripe:
     * then, the form will wait for Stripe to return with a card token.
 4. Javascript will send user fields and card token to our rails app for validation.
 5. Once validated, Rails should send user info: email, plan id, and card token to Stripe server and Stripe will create a subscription and send back the customer token. Rails will save customer token and user information to our database.
+-----
+## Screenshots
+
+![DevMatch desktop](https://i.imgur.com/OjqfWrs.png)
+
+![DevMatch mobile](https://i.imgur.com/skoOsvo.png)
+-----
+## Screen Capture
+
+**Demo of CC info accepted**
+
+![successful cc demo](https://i.imgur.com/eG19kyK.gif)
