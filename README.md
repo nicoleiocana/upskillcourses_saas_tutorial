@@ -14,6 +14,65 @@ Stripe:
 4. Javascript will send user fields and card token to our rails app for validation.
 5. Once validated, Rails should send user info: email, plan id, and card token to Stripe server and Stripe will create a subscription and send back the customer token. Rails will save customer token and user information to our database.
 -----
+## Installation
+
+1\. To get started with the app, clone the repo and then install the needed gems:
+
+```
+$ bundle install --without production
+```
+
+### Prerequisites Before Continuing with Installation
+
+i. You will need to create a Stripe account to obtain the API key.
+
+[Create your Stripe account.](https://dashboard.stripe.com/register)
+
+On your dashboard, your test API keys are directly below the _Get your test API keys_ section. Click on the show/ hide icon to view the Secret Key.
+
+![Stripe dashboard](https://i.imgur.com/RHtQBzv.png)
+
+ii. The following commands are written in the terminal:
+
+```
+bundle exec figaro install
+touch config/initializers/stripe.rb
+```
+
+iii. The following text is written in `config/initializers/stripe.rb`
+
+```
+Stripe.api_key = ENV["stripe_api_key"]
+STRIPE_PUBLIC_KEY = ENV["stripe_publishable_key"]
+```
+iv. The following text is written in the `config/application.yml` (Put your Stripe API keys in this file)
+
+```
+...
+stripe_api_key: sk_test_6Wa4cw7hhDiS2oabcdefg123456
+stripe_publishable_key: pk_test_gj3DgfQoHLUabcdefg123456
+#
+production:
+  stripe_api_key: sk_test_6Wa4cw7hhDiS2oabcdefg123456
+  stripe_publishable_key: pk_test_gj3DgfQoHLUabcdefg123456
+```
+  
+v. You are now ready to complete the installation the app. For more information, see the
+[Figaro Gem and API Keys video](https://upskillcourses.com/courses/essential-web-developer-course/figaro-gem-and-api-keys).
+
+2\. Next, migrate the database:
+
+```
+$ rails db:migrate
+```
+
+3\. Run the app on http://localhost:3000. 
+
+```
+$ rails s
+```
+
+-----
 ## Screenshots
 
 ![DevMatch desktop](https://i.imgur.com/OjqfWrs.png)
