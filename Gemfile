@@ -48,7 +48,7 @@ gem 'stripe', '1.48.0'
 gem 'figaro', '1.1.1'
 
 # Use Paperclip for image upload
-gem 'paperclip', '5.2.0'
+# gem 'paperclip', '5.2.0'
 
 # Boot large ruby/rails apps faster
 gem 'bootsnap', '~> 1.4', '>= 1.4.6'
