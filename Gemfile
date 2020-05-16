@@ -81,6 +81,9 @@ end
 group :production do
   # Use the PostgreSQL gem for Heroku production servers
   gem 'pg', '0.18.4'
+  
+  # Official AWS Ruby gem for Amazon Simple Storage Service (Amazon S3)
+  gem 'aws-sdk-s3', '~> 1.64', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
