@@ -51,7 +51,7 @@ gem 'figaro', '1.1.1'
 # gem 'paperclip', '5.2.0'
 
 # Boot large ruby/rails apps faster
-gem 'bootsnap', '~> 1.4', '>= 1.4.6'
+gem 'bootsnap', '~> 1.4', '>= 1.4.6', require: false
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record

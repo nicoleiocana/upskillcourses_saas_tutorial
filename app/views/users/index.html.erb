@@ -11,7 +11,11 @@
           <% if user.profile %>
             <li>
               <div class="well row <%= cycle('white-bg', '') %>">
-                
+                <div class="col-sm-4 text-center">
+                  <%= link_to user do %>
+                    <%= image_tag user.profile.avatar, class:'user-index-avatar' if user.profile.avatar.attached? %>
+                  <% end %>
+                </div>
                 <div>
                   <%= link_to user do %>
                     <h2><%= user.profile.first_name %> <%= user.profile.last_name %></h2>

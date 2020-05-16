@@ -12,7 +12,8 @@ class ProfilesController < ApplicationController
     # Ensure that we have the user who is filling out form
     @user = User.find(params[:user_id])
     # Create profile linked to this specific user
-    @profile = @user.build_profile(profile_params)
+    @profile = @user.create_profile(profile_params)
+    @profile.avatar.attach(params[:profile][:avatar])
     if @profile.save
       flash[:success] = "Profile created!"
       redirect_to user_path(id: params[:user_id])
@@ -45,7 +46,7 @@ class ProfilesController < ApplicationController
   
   private
     def profile_params
-      params.require(:profile).permit(:first_name, :last_name, :job_title, :phone_number, :contact_email, :description)
+      params.require(:profile).permit(:first_name, :last_name, :avatar, :job_title, :phone_number, :contact_email, :description)
     end
     
     def only_current_user
