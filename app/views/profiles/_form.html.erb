@@ -9,7 +9,7 @@
   </div>
   <div class="form-group">
     <%= f.label :avatar %>
-    <%= f.file_field :avatar, class:'form-control' %>
+    <%= f.file_field :avatar, class:'form-control', accept: "image/jpeg,image/gif,image/png" %>
   </div>
   <div class="form-group">
     <%= f.label :job_title %>
@@ -31,3 +31,13 @@
     <%= f.submit "Update profile", class: 'btn btn-primary' %>
   </div>
 <% end %>
+
+<script type="text/javascript">
+  $("#profile_avatar").bind("change", function() {
+    const size_in_megabytes = this.files[0].size/1024/1024;
+    if (size_in_megabytes > 5) {
+      alert("Maximum file size is 5MB. Please choose a smaller file.");
+      $("#profile_avatar").val("");
+    }
+  });
+</script>

@@ -53,6 +53,9 @@ gem 'figaro', '1.1.1'
 # Boot large ruby/rails apps faster
 gem 'bootsnap', '~> 1.4', '>= 1.4.6', require: false
 
+# Validations for Active Storage (presence)
+gem 'active_storage_validations', '~> 0.8.9'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '1.3.13'
