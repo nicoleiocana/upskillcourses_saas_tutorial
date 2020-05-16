@@ -56,6 +56,12 @@ gem 'bootsnap', '~> 1.4', '>= 1.4.6', require: false
 # Validations for Active Storage (presence)
 gem 'active_storage_validations', '~> 0.8.9'
 
+# High-level wrapper for processing images for the web with ImageMagick
+gem 'image_processing', '~> 1.10', '>= 1.10.3'
+
+# Manipulate images with minimal use of memory via ImageMagick
+gem 'mini_magick', '~> 4.10', '>= 4.10.1'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '1.3.13'
