@@ -31,6 +31,7 @@ Below are crucial updates and resolutions to some issues.**
 | | `def display_avatar avatar.variant(combine_options: { auto_orient: true, gravity: "center", resize: "128x128^", crop: "128x128+0+0" }) end` in `profile.rb` |
 | | update `@user.profile.avatar.url` to `@user.profile.display_avatar` in `show.html.erb` in the *users* folder |
 | | update `user.profile.avatar.url` to `user.profile.display_avatar` in `index.html.erb` in the *users* folder |
+| Mailgun only allows sending to just [authorized recipients](https://help.mailgun.com/hc/en-us/articles/217531258)| Update production email service to [Sendgrid](https://sendgrid.com/) |
 
 -----
 ## Installation
