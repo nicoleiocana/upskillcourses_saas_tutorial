@@ -26,3 +26,6 @@
 # Ignore uploaded files in development
 /storage/*
 !/storage/.keep
+
+# Don't check in credentials
+config/env.yml
