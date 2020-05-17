@@ -13,8 +13,8 @@ class Profile < ActiveRecord::Base
     avatar.variant(combine_options: {
       auto_orient: true,
       gravity: "center",
-      resize: "250x250^",
-      crop: "250x250+0+0"
+      resize: "128x128^",
+      crop: "128x128+0+0"
       })
   end
 end
