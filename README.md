@@ -86,7 +86,13 @@ v. You are now ready to complete the installation the app. For more information,
 $ rails db:migrate
 ```
 
-3\. Run the app on http://localhost:3000. 
+3\. Seed the plans for the database.
+
+```
+$ rails db:seed
+```
+
+4\. Run the app on http://localhost:3000. 
 
 ```
 $ rails s
