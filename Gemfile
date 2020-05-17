@@ -62,9 +62,6 @@ gem 'image_processing', '~> 1.10', '>= 1.10.3'
 # Manipulate images with minimal use of memory via ImageMagick
 gem 'mini_magick', '~> 4.10', '>= 4.10.1'
 
-# Official AWS Ruby gem for Amazon Simple Email Service (Amazon SES)
-gem 'aws-sdk-ses', '~> 1.29'
-
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '1.3.13'
