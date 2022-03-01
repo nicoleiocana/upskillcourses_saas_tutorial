@@ -57,7 +57,7 @@ gem 'bootsnap', '~> 1.4', '>= 1.4.6', require: false
 gem 'active_storage_validations', '~> 0.8.9'
 
 # High-level wrapper for processing images for the web with ImageMagick
-gem 'image_processing', '~> 1.10', '>= 1.10.3'
+gem 'image_processing', '~> 1.12'
 
 # Manipulate images with minimal use of memory via ImageMagick
 gem 'mini_magick', '~> 4.10', '>= 4.10.1'
